@@ -23,7 +23,14 @@ pipeline {
             }
         }
 
+        stage ('Package Stage') {
 
+            steps {
+                
+                    sh 'mvn clean package'
+              
+            }
+        }
       
     }
 }
